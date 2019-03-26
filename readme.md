@@ -58,6 +58,8 @@ These patterns identify a simple way to create relationships berween entities.
 - Compose objects into tree structures to represent hierarchies.
 - Composite lets clints treat individual objects and compositions of objects uniformly.
 
+![Composite Diagram](https://github.com/jrmahechad/js-design-patterns/blob/master/structural/composite.png)
+
 # Sources
 The content of this repo is base on several resources online.
 Some of them are https://loredanacirstea.github.io/es6-design-patterns/ , https://sourcemaking.com/design_patterns/factory_method
