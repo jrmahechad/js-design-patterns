@@ -9,7 +9,7 @@ These patterns offers object creation mechanisms according of the situation.
 - Provides an interface to create families of related or dependent objects without specifying their concrete classes.
 - A hierarchy that encapsulates: many possible "platforms", and the construction of a suite of "products".
 
-[[https://github.com/jrmahechad/js-design-patterns/blob/master/creational/abstract_factory.png|alt=abstract_factory]]
+[[https://github.com/jrmahechad/js-design-patterns/blob/master/creational/abstract_factory.png]]
 
 ## Builder
 
