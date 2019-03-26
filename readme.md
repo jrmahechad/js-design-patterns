@@ -35,6 +35,10 @@ These patterns identify a simple way to create relationships berween entities.
 - Convert the intergace of a class into another interface that the client expects.
 - Classes that couldn't work together because of incompatible interfaces now can do it.
 
+## Bridge 
+
+- Decouple an abstraction from its implementation so that the two can vary independently
+
 # Sources
 The content of this repo is base on several resources online.
 Some of them are https://loredanacirstea.github.io/es6-design-patterns/ , https://sourcemaking.com/design_patterns/factory_method
