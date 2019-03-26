@@ -60,6 +60,13 @@ These patterns identify a simple way to create relationships berween entities.
 
 ![Composite Diagram](https://github.com/jrmahechad/js-design-patterns/blob/master/structural/composite.png)
 
+## Decorator
+
+- Attach additional responsibilities to an object dynamically.
+- Provides a flexible alternative to subclassing fo extending funcionality.
+
+![Decorator Diagram](https://github.com/jrmahechad/js-design-patterns/blob/master/structural/decorator.png)
+
 # Sources
 The content of this repo is base on several resources online.
 Some of them are https://loredanacirstea.github.io/es6-design-patterns/ , https://sourcemaking.com/design_patterns/factory_method
