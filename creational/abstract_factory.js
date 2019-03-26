@@ -46,6 +46,7 @@ class ConcreteFactory2 extends AbstractFactory {
     }
 }
 
+//We have two abstract classes for products
 class AbstractProductA {
     constructor() {
     }
@@ -56,7 +57,7 @@ class AbstractProductB {
     }
 }
 
-
+//Each product 'type' extends it's own Abstract class
 class ProductA1 extends AbstractProductA {
     constructor() {
         super()
