@@ -67,6 +67,11 @@ These patterns identify a simple way to create relationships berween entities.
 
 ![Decorator Diagram](https://github.com/jrmahechad/js-design-patterns/blob/master/structural/decorator.png)
 
+## Facade
+
+- Provide a unified interface to a set of interfaces in a subsystem.
+- Defines a higher-level interface that makes the subsystem easier to use.
+
 # Sources
 The content of this repo is base on several resources online.
 Some of them are https://loredanacirstea.github.io/es6-design-patterns/ , https://sourcemaking.com/design_patterns/factory_method
