@@ -26,6 +26,15 @@ These patterns offers object creation mechanisms according of the situation.
 
 - Ensure a class has only one instance, and provide a global point to access it.
 
+# Structural
+
+These patterns identify a simple way to create relationships berween entities.
+
+## Adapter
+
+- Convert the intergace of a class into another interface that the client expects.
+- Classes that couldn't work together because of incompatible interfaces now can do it.
+
 # Sources
 The content of this repo is base on several resources online.
 Some of them are https://loredanacirstea.github.io/es6-design-patterns/ , https://sourcemaking.com/design_patterns/factory_method
