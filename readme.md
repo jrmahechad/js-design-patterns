@@ -9,6 +9,8 @@ These patterns offers object creation mechanisms according of the situation.
 - Provides an interface to create families of related or dependent objects without specifying their concrete classes.
 - A hierarchy that encapsulates: many possible "platforms", and the construction of a suite of "products".
 
+[[https://github.com/jrmahechad/js-design-patterns/blob/master/creational/abstract_factory.png|alt=abstract_factory]]
+
 ## Builder
 
 - Separate the contruction of a complex object from its representation.
@@ -37,7 +39,12 @@ These patterns identify a simple way to create relationships berween entities.
 
 ## Bridge 
 
-- Decouple an abstraction from its implementation so that the two can vary independently
+- Decouple an abstraction from its implementation so that the two can vary independently.
+
+## Composite
+
+- Compose objects into tree structures to represent hierarchies.
+- Composite lets clints treat individual objects and compositions of objects uniformly.
 
 # Sources
 The content of this repo is base on several resources online.
