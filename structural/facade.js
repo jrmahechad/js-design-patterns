@@ -1,53 +1,67 @@
 'use strict';
 
 class Facade {
-    
-    CallClass1Method1(){
-        let class1 = new Class1();
-        class1.Method1();
+    constructor(){
+        console.log('Create Facade');
+        
     }
-    
-    CallClass2Method2(){
-        let class2 = new Class2();
-        class2.Method2();
+
+    CallMethod1(className) {
+        switch (className) {
+            case 'class1':
+                let class1 = new Class1();
+                class1.Method1();
+                break;
+            case 'class2':
+                let class2 = new Class2();
+                class2.Method1();
+                break;
+
+            default:
+                console.log('Method 1 is not available')
+
+                break;
+        }
+
     }
+
 }
 
 class Class1 {
 
-    constructor(){
+    constructor() {
         console.log('Create Class 1')
     }
-    
-    Method1(){
+
+    Method1() {
         console.log('Class 1 Method 1')
     }
-    
-    Method2(){
+
+    Method2() {
         console.log('Class 1 Method 2')
     }
 }
 
 class Class2 {
 
-    constructor(){
+    constructor() {
         console.log('Create Class 2')
     }
 
-    Method1(){
+    Method1() {
         console.log('Class 2 Method 1')
     }
 
-    Method2(){
+    Method2() {
         console.log('Class 2 Method 2')
     }
 }
 
 
-function init_Facade(){
+function init_Facade() {
     let facade = new Facade();
-    facade.CallClass1Method1();
-    facade.CallClass2Method2();
+    facade.CallMethod1('class1');
+    facade.CallMethod1('class2');
 }
 
 init_Facade();
