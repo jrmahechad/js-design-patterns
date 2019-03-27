@@ -76,7 +76,7 @@ These patterns identify a simple way to create relationships berween entities.
 
 ## Flyweight
 
--
+- Use share objects to support
 
 ![Flyweight Diagram](https://github.com/jrmahechad/js-design-patterns/blob/master/structural/flyweight.png)
 
