@@ -80,6 +80,14 @@ These patterns identify a simple way to create relationships berween entities.
 
 ![Flyweight Diagram](https://github.com/jrmahechad/js-design-patterns/blob/master/structural/flyweight.png)
 
+## Proxy
+
+- Provide a placeholder for to access and control another object.
+- Adds a wrapper to pretect the real component
+
+![Proxy Diagram](https://github.com/jrmahechad/js-design-patterns/blob/master/structural/proxy.png)
+
+
 # Sources
 The content of this repo is base on several resources online.
 Some of them are https://loredanacirstea.github.io/es6-design-patterns/ , https://sourcemaking.com/design_patterns/factory_method
