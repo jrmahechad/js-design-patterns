@@ -16,13 +16,13 @@ class Creator {
     constructor() {
     }
 
-    FactoryMethod() {
+    factoryMethod() {
 
     }
 
-    AnOperation() {
+    anOperation() {
         console.log("AnOperation()")
-        this.product = this.FactoryMethod()
+        this.product = this.factoryMethod()
         console.log('this.product instanceof ConcreteProduct',this.product instanceof ConcreteProduct)
     }
 }
@@ -34,13 +34,13 @@ class ConcreteCreator extends Creator {
         console.log('ConcreteCreator created')
     }
 
-    FactoryMethod() {
+    factoryMethod() {
         return new ConcreteProduct();
     }
 }
 
 function init_FactoryMethod() {
     var factory = new ConcreteCreator()
-    factory.AnOperation()
+    factory.anOperation()
 }
 init_FactoryMethod();

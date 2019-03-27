@@ -4,7 +4,7 @@ class Componentt {
     constructor() {
     }
 
-    Operation (){
+    operation (){
     }
 }
 
@@ -14,7 +14,7 @@ class ConcreteComponent extends Componentt {
         console.log('ConcreteComponent created')
     }
 
-    Operation (){
+    operation (){
         console.log('o o')
     }
 }
@@ -26,8 +26,8 @@ class Decorator extends Componentt {
         console.log('Decorator created')
     }
 
-    Operation (){
-        this.component.Operation()
+    operation (){
+        this.component.operation()
     }
 }
 
@@ -38,8 +38,8 @@ class ConcreteDecoratorA extends Decorator {
         console.log('ConcreteDecoratorA created')
     }
 
-    Operation (){
-        super.Operation()
+    operation (){
+        super.operation()
         console.log(this.addedState)
     }
 }
@@ -51,13 +51,13 @@ class ConcreteDecoratorB extends Decorator {
         console.log('ConcreteDecoratorA created')
     }
 
-    Operation (){
-        super.Operation()
+    operation (){
+        super.operation()
         console.log(this.addedState + this.addedState + this.addedState + this.addedState + this.addedState)
     }
 
-    AddedBehavior  (){
-        this.Operation()
+    addedBehavior  (){
+        this.operation()
         console.log('|........|')
     }
 }
@@ -67,10 +67,10 @@ function init_Decorator() {
     var decoratorA = new ConcreteDecoratorA(component, '!!!')
     var decoratorB = new ConcreteDecoratorB(component, '.')
     console.log('component: ')
-    component.Operation()
+    component.operation()
     console.log('decoratorA: ')
-    decoratorA.Operation()
+    decoratorA.operation()
     console.log('decoratorB: ')
-    decoratorB.AddedBehavior()
+    decoratorB.addedBehavior()
 }
 init_Decorator();

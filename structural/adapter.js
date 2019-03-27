@@ -14,7 +14,7 @@ class Target {
         return result
     }
 
-    Request() {
+    request() {
     }
 }
 
@@ -24,7 +24,7 @@ class Adaptee {
         console.log('Adaptee created')
     }
 
-    SpecificRequest () {
+    specificRequest () {
         console.log('Adaptee request')
     }
 }
@@ -37,15 +37,15 @@ class Adapter extends Adaptee {
         console.log('Adapter created')
     }
 
-    Request (){
-        return this.SpecificRequest()
+    request (){
+        return this.specificRequest()
     }
 }
 
 
 function init_Adapter() {
     var f = new Target("adapter")
-    f.Request()
+    f.request()
 }
 
 init_Adapter();

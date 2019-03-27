@@ -6,15 +6,15 @@ class Facade {
         
     }
 
-    CallMethod1(className) {
+    callMethod1(className) {
         switch (className) {
             case 'class1':
                 let class1 = new Class1();
-                class1.Method1();
+                class1.method1();
                 break;
             case 'class2':
                 let class2 = new Class2();
-                class2.Method1();
+                class2.method1();
                 break;
 
             default:
@@ -33,11 +33,11 @@ class Class1 {
         console.log('Create Class 1')
     }
 
-    Method1() {
+    method1() {
         console.log('Class 1 Method 1')
     }
 
-    Method2() {
+    method2() {
         console.log('Class 1 Method 2')
     }
 }
@@ -48,11 +48,11 @@ class Class2 {
         console.log('Create Class 2')
     }
 
-    Method1() {
+    method1() {
         console.log('Class 2 Method 1')
     }
 
-    Method2() {
+    method2() {
         console.log('Class 2 Method 2')
     }
 }
@@ -60,8 +60,8 @@ class Class2 {
 
 function init_Facade() {
     let facade = new Facade();
-    facade.CallMethod1('class1');
-    facade.CallMethod1('class2');
+    facade.callMethod1('class1');
+    facade.callMethod1('class2');
 }
 
 init_Facade();

@@ -4,16 +4,16 @@ class Component {
     constructor() {
     }
 
-    Operation (){
+    operation (){
     }
 
-    Add (Component){
+    add (Component){
     }
 
-    Remove (Component){
+    remove (Component){
     }
 
-    GetChild (key){
+    getChild (key){
     }
 }
 
@@ -24,7 +24,7 @@ class Leaf extends Component {
         console.log('Leaf created')
     }
 
-    Operation (){
+    operation (){
         console.log(this.name)
     }
 }
@@ -37,35 +37,35 @@ class Composite extends Component {
         console.log('Composite created')
     }
 
-    Operation (){
+    operation (){
         console.log('Composite Operation for: ' + this.name)
         for(var i in this.children)
-            this.children[i].Operation()
+            this.children[i].operation()
     }
 
-    Add (Component){
+    add (Component){
         this.children.push(Component)
     }
 
-    Remove (Component){
+    remove (Component){
         for(var i in this.children)
             if(this.children[i] === Component)
                 this.children.splice(i, 1)
     }
 
-    GetChild (key){
+    getChild (key){
         return this.children[key]
     }
 }
 
 function init_Composite() {
     var composite1 = new Composite('C1')
-    composite1.Add(new Leaf('L1'))
-    composite1.Add(new Leaf('L2'))
+    composite1.add(new Leaf('L1'))
+    composite1.add(new Leaf('L2'))
     var composite2 = new Composite('C2')
-    composite2.Add(composite1)
-    composite1.GetChild(1).Operation()
-    composite2.Operation()
+    composite2.add(composite1)
+    composite1.getChild(1).operation()
+    composite2.operation()
 }
 
 init_Composite();

@@ -4,7 +4,7 @@ class Prototype {
     constructor(prototype) {
     }
 
-    Clone (){
+    clone (){
     }
 }
 
@@ -19,7 +19,7 @@ class ConcretePrototype1 extends Prototype {
         this[key] = val
     }
 
-    Clone (){
+    clone (){
         console.log('custom cloning function')
         let clone = new ConcretePrototype1()
         let keys = Object.keys(this)
@@ -37,7 +37,7 @@ class ConcretePrototype2 extends Prototype {
         super()
     }
 
-    Clone (){
+    clone (){
         console.log("ConcretePrototype2 cloned");
         return clone;
     }
@@ -46,7 +46,7 @@ class ConcretePrototype2 extends Prototype {
 function init_Prototype () {
     var proto1 = new ConcretePrototype1()
     proto1.setFeature('feature', "feature 22")
-    var clone1 = proto1.Clone()
+    var clone1 = proto1.clone()
     console.log(clone1.feature)
 }
 init_Prototype();

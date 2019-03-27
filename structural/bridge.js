@@ -4,8 +4,8 @@ class Abstraction {
     constructor() {
     }
 
-    Operation (){
-        this.imp.OperationImp();
+    operation (){
+        this.imp.operationImp();
     }
 }
 
@@ -27,7 +27,7 @@ class Implementor {
     constructor() {
     }
 
-    OperationImp (){
+    operationImp (){
     }
 }
 
@@ -38,7 +38,7 @@ class ConcreteImplementorA extends Implementor {
         console.log('ConcreteImplementorA created')
     }
 
-    OperationImp (){
+    operationImp (){
         console.log('ConcreteImplementorA OperationImp')
     }
 }
@@ -49,7 +49,7 @@ class ConcreteImplementorB extends Implementor {
         console.log('ConcreteImplementorB created')
     }
 
-    OperationImp (){
+    operationImp (){
         console.log('ConcreteImplementorB OperationImp')
     }
 }
@@ -62,7 +62,7 @@ function init_Bridge() {
     else
         abstraction.setImp(new ConcreteImplementorB())
 
-    abstraction.Operation()
+    abstraction.operation()
 }
 
 init_Bridge();

@@ -13,11 +13,11 @@ class Singleton {
         console.log("Singleton class created")
     }
 
-    SingletonOperation () {
+    singletonOperation () {
         console.log('SingletonOperation')
     }
 
-    GetSingletonData () {
+    getSingletonData () {
         return this.data
     }
 }
@@ -25,8 +25,8 @@ class Singleton {
 function init_Singleton() {
     var singleton1 = new Singleton("data1")
     var singleton2 = new Singleton("data2")
-    console.log(singleton1.GetSingletonData())
-    console.log(singleton2.GetSingletonData())
+    console.log(singleton1.getSingletonData())
+    console.log(singleton2.getSingletonData())
     console.log('singleton1 instanceof Singleton' , singleton1 instanceof Singleton)
     console.log('singleton2 instanceof Singleton' , singleton2 instanceof Singleton)
     console.log('singleton1 === singleton' , singleton1 === singleton2)
