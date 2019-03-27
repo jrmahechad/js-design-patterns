@@ -92,7 +92,7 @@ These patterns identify a simple way to create relationships berween entities.
 - Let you pass requests along a chain of handlers.
 - Each handler decides either to process the request or to pass it to the next one.
 
-![Chain Of Responsibility Diagram](https://github.com/jrmahechad/js-design-patterns/blob/master/structural/chain_of_responsibility.png)
+![Chain Of Responsibility Diagram](https://github.com/jrmahechad/js-design-patterns/blob/master/behavioral/chain_of_responsibility.png)
 
 # Sources
 The content of this repo is base on several resources online.
